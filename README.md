@@ -136,17 +136,26 @@ node <filename>.js
 
     module.exports = {apple, banana, orange};
     ```
- * Script.js
+   * Script.js
    ```bash
    const info = require('./Fruits');
    console.log(info);
    ```
-* O/P = <br>
-  {
+   * O/P = <br>
+    { <br>
     apple: { name: 'Apple', color: 'Red', price: 90 },<br>
     banana: { name: 'Banana', color: 'Yellow', price: 50 },<br>
     orange: { name: 'Orange', color: 'Yellow', price: 60 }<br>
-  }
+    }
+## Require() Vs Import
+  ### Require() = 
+  * We Can't Selectively load only the pices we need
+  * It is a old method to load any file before (ES6)
+  * It is used to load whole file at a time
+  * module.exports = file_name;
+  * In this method Loading is Synchronous Means line wise module loaded
+  ### Import() = 
+  *
 
 
 
