@@ -29,7 +29,7 @@ node <filename>.js
 <h1 align="center"> Start </h1>
 <br>
 
-## Chapter_1(Basics)
+# Chapter_1(Basics)
 * Process = Process command is use to get details about node which is install on your local machine
   
    ```bash
@@ -63,7 +63,7 @@ node <filename>.js
     Hii mohit
     ```
 
-## Chapter_2 (Exporting File or Folder)
+# Chapter_2 (Exporting File or Folder)
   * Require() = A built-in-function to include modules that exist in seperate files
   * Modules.export = A special object <br><br>
 ### Exporting a Single File =>
@@ -72,14 +72,14 @@ node <filename>.js
    File.js
     
    ```bash
-   module.exports = 123;
+    module.exports = 123;
    ```
    script.js
   
-   ```bash
-   const data = require('./File');
-   console.log(data);
-   ```
+  ```bash
+    const data = require('./File');
+    console.log(data);
+  ```
    O/P = 123
 
 ### Exporting a Entire Directories => 
@@ -108,19 +108,19 @@ node <filename>.js
      module.exports = Apple;
      ```
      
-  * Banana.js
-    ```bash
-    const Banana = {
+   * Banana.js
+     ```bash
+     const Banana = {
         name: 'Banana',
         color: 'Yellow',
         price: 50
-    };
+     };
 
-    module.exports = Banana;
-    ```
+      module.exports = Banana;
+      ```
    * Orange.js
-     ```bash
-     const Orange = {
+      ```bash
+      const Orange = {
          name: 'Orange',
          color: 'Yellow',
          price: 60
@@ -155,11 +155,23 @@ node <filename>.js
   * module.exports = file_name;
   * In this method Loading is Synchronous Means line wise module loaded
   ### Import() = 
-  *
+  * We can selectively load only the pices we need, which can save the memory
+  * It is a new method after (ES6) version and it is use to load a single module which is faster than require
+  * export
+  * In this method loading can be Asynchronous means we can be use first function or last function or any function
 
+<h1 align="center"> Express.js <h1/>
 
+## Library Vs Framework 
+  ### Library = 
+  
+  * A library is a collection of pre written code that can be used to perform specific tasks
+  * Ex - Axios
 
+  ### Framework = 
 
+  * A Framework is a set of pre-written code that provides a structure for developing software applications
+  * Ex - express.js
 
 
 
